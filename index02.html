@@ -11,15 +11,11 @@
 			body{
 				background: #fff url(images/bg.jpg) repeat top left;
 				color: #666;
+				text-align: center;
 			}
-			.clearfix{*zoom: 1;}
-			.clearfix:after{
-				content: '200B';
-				display: block;
-				height: 0;
-				font-size: 0;
-				clear: both;
-			}
+			.newaction{ display: inline-block; }
+			.newaction li{list-style: none;padding: 7px; float: left;}
+			.newaction a{color: #5e5e5e;text-decoration: none}
 			.container{
 				width: 100%;
 				height: 100%;
@@ -31,7 +27,7 @@
 				line-height: 35px;
 				color: #2d6277;
 				padding: 20px 30px 10px 30px;
-				margin: 0px 20px 10px 20px;
+				margin: 0 20px 10px 20px;
 			}
 			.bgimg{
 				width: 600px;
@@ -67,7 +63,7 @@
 			.bgimg .img-pic .pic1{
 				background: url(images/i21.jpg);
 				opacity: 1;
-				left:0px;
+				left:0;
 			}
 			.bgimg .img-pic .pic2{
 				background: url(images/i22.jpg);
@@ -106,10 +102,9 @@
 								'<div class="pic3"></div>'+
 								'<div class="pic4"></div>'+
 							'</div>'+
-							'</div>';
+							'</div>'+
+							'<span>'+(i+1)+'</span>';
 					$('.bgimg').append(text);
-					var text2='<span>'+(i+1)+'</span>';
-					$('.bgimg').append(text2);
 				}
 				//按钮定位=====
 				$(".bgimg span").each(function(i){
@@ -131,7 +126,13 @@
     </head>
     <body>
         <div class="container">
-			<h1>手风琴切换</h1>
+			<!--<h1>手风琴切换</h1>-->
+			<ul class="newaction">
+				<li><a href="index.html">3d旋转切换</a></li>
+				<li><a href="index02.html">手风琴切换</a></li>
+				<li><a href="lol.html">图片散落与重组</a></li>
+				<li><a href="nav.html">卷帘式导航</a></li>
+			</ul>
 				<div class="bgimg">
 				</div>
         </div>

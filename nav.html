@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
+        body{ text-align: center;color: #ffffff; font-size: 18px;}
+    .newaction{ display: inline-block; }
+    .newaction li{list-style: none;padding: 7px; float: left;}
+    .newaction a{color: #5e5e5e;text-decoration: none}
         .box{width: 650px;margin: 0 auto;}
         div{transform-style: preserve-3d;perspective: 800px;}
-        .box-3d{position: absolute;  top:66px;height: 66px;width: 100%;transform: rotateX(-90deg);transform-origin: top;background: url("images/16pic_470029_b.jpg");}
+        .box-3d{position: absolute;  top:66px;height: 66px;  line-height: 66px;width: 100%;transform: rotateX(-90deg);transform-origin: top;background: url("images/16pic_470029_b.jpg");}
         .box .box-warp{transform: rotateX(0deg);transform-origin: bottom;}
         .box-1{background: url("images/16pic_470029_b.jpg") left 396px;}
         .box-2{background: url("images/16pic_470029_b.jpg") left 330px;}
@@ -40,21 +44,27 @@
                     console.log(i);
                     if(i>5){
                         clearInterval(timer);
-                    };
+                    }
                 },300);
             };
         };
     </script>
 </head>
 <body>
+<ul class="newaction">
+    <li><a href="index.html">3d旋转切换</a></li>
+    <li><a href="index02.html">手风琴切换</a></li>
+    <li><a href="lol.html">图片散落与重组</a></li>
+    <li><a href="nav.html">卷帘式导航</a></li>
+</ul>
 <div class="box">
-    <div class="box-warp box-3d">
-        <div class="box-3d box-1">
-            <div class="box-3d box-2">
-                <div class="box-3d box-3">
-                    <div class="box-3d box-4">
-                        <div class="box-3d box-5">
-                            <div class="box-3d box-6"></div>
+    <div class="box-warp box-3d">请点击
+        <div class="box-3d box-1">标题1
+            <div class="box-3d box-2">标题2
+                <div class="box-3d box-3">标题3
+                    <div class="box-3d box-4">标题4
+                        <div class="box-3d box-5">标题5
+                            <div class="box-3d box-6">标题6</div>
                         </div>
                     </div>
                 </div>
